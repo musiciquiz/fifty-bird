@@ -29,9 +29,7 @@ int main(void)
         }
        //new line
        printf("\n");
-       
-        
-    }
+       }
         
     
 }
