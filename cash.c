@@ -9,10 +9,10 @@ int main(void)
     {
         amount = get_float("Please enter change amount:");
     }
-    while (amount <0);
+    while (amount < 0);
     // change float to int and round to cents
     int cents = round(amount * 100);
-     // how many coins and keep track
+    // how many coins and keep track
     int coins = 0;
     int change = cents;
     //quartes
@@ -28,7 +28,7 @@ int main(void)
         int b = change / 10;
         change = change - (b * 10);
         coins = coins + b;
-     }
+    }
     // nickels
     if (change / 5 > 0)
     {
@@ -38,7 +38,7 @@ int main(void)
     }
     //pennies
     coins = coins + change;
-    printf("%i\n",coins);
+    printf("%i\n", coins);
   
 }
 
