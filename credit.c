@@ -10,7 +10,7 @@ int main(void)
     // initiate global variables
     long counter_even = 10;
     long counter_odd = 1;
-    int sum_even= 0;
+    int sum_even = 0;
     int sum_odd = 0;
     //finding sum even numbers
     for (long i = 100; i < 56000000000000000; i *= 100)
@@ -22,7 +22,7 @@ int main(void)
         //what if double digit number?
         if (x > 9)
         {
-            x = ( x % 10 ) + 1;
+            x = (x % 10) + 1;
         }
         
         sum_even += x;
