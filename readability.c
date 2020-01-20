@@ -20,7 +20,7 @@ int main(void)
         {
             total_letters += 1;
         }
-        if (isblank(text[n-1]))
+        if (isblank(text[n - 1]))
         {
             words += 1;
         }
@@ -48,9 +48,5 @@ int main(void)
         printf("Grade %i\n", (int)round(index));
     }
 
-    //printf ("Number of letters is %i\n", total_letters);
-    //printf("Number of words is %i\n", words);
-    //printf("Number of sentences is %i\n", sent);
-    //printf("Grade %f\n", index);
 }
 
