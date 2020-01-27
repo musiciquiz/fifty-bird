@@ -29,7 +29,7 @@ int main(int argc, string argv[])
             return 1;
         }
         //convert to upper case so for consistency
-        if  (islower(key[i]))
+        if (islower(key[i]))
         {
             key[i] = toupper(key[i]);
         }
@@ -38,12 +38,13 @@ int main(int argc, string argv[])
     for (int i = 0; i < strlen(key) - 1; i++)
     {
         for (int j = i + 1; j < strlen(key); j++)
-        {//compare letters after
+        {
+            //compare letters after
 
             if (key[i] == key[j])
             {
                 printf("Key must be 26 unique alpha characters\n");
-            return 1;
+                return 1;
             }
         }
     }
@@ -55,13 +56,13 @@ int main(int argc, string argv[])
     for (int i = 0; i < strlen(input); i++)
     {
         // for upper case
-        if(isupper(input[i]))
+        if (isupper(input[i]))
         {
             // find out what letter it is then substitute
             int letter;
             for (int j = 0; j < strlen(alpha); j++)
             {
-                if(input[i] == alpha[j])
+                if (input[i] == alpha[j])
                 {
                     letter = j;
                 }
@@ -69,14 +70,14 @@ int main(int argc, string argv[])
             input[i] = key[letter];
         }
         // for lower case
-        else if(islower(input[i]))
+        else if (islower(input[i]))
         {
             //make upper case
             input[i] = toupper(input[i]);
             int letter;
             for (int k = 0; k < strlen(alpha); k++)
             {
-                if(input[i] == alpha[k])
+                if( input[i] == alpha[k])
                 {
                     letter = k;
                 }
