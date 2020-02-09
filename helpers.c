@@ -11,7 +11,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         // loop over pixels in rows
         for(int j = 0; j < width - 1; j++)
         {
-            int grey = round((image[i][j].rgbtRed + image[i][j].rgbtBlue + image[i][j].rgbtGreen) / 3.0);
+            int grey = round((float(image[i][j].rgbtRed) + float(image[i][j].rgbtBlue) + float(image[i][j].rgbtGreen)) / 3.0);
             image[i][j].rgbtRed = grey;
             image[i][j].rgbtGreen = grey;
             image[i][j].rgbtBlue = grey;
