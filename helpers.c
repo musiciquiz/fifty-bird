@@ -6,10 +6,10 @@
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     // loop over rows
-    for(int i = 0, h = height - 1; i < h; i++)
+    for(int i = 0; i < height -1 ; i++)
     {
         // loop over pixels in rows
-        for(int j = 0, w = width - 1; j < w; j++)
+        for(int j = 0; j < width - 1; j++)
         {
             int grey = round((image[i][j].rgbtRed + image[i][j].rgbtBlue + image[i][j].rgbtGreen) / 3.0);
             image[i][j].rgbtRed = grey;
