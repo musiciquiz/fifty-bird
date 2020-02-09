@@ -68,17 +68,17 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     //make copy of image that we can use to calculate and not mess with original
     RGBTRIPLE temp[height][width];
-    for(int i = 0; i < height - 1; i++)
+    for(int i = 0; i < height; i++)
     {
-        for(int j = 0; j < width - 1; j++)
+        for(int j = 0; j < width; j++)
         {
             temp[i][j] = image [i][j];
         }
     }
 
-    for(int i = 0, h = height - 1; i < h; i++)
+    for(int i = 0, int h = height; i < h; i++)
     {
-        for(int j = 0, w = width -1; j < w; j++)
+        for(int j = 0, w = width; j < w; j++)
         {
             // deal with corners top LHS
             if(i == 0 && j == 0)
