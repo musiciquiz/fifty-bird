@@ -76,9 +76,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         }
     }
 
-    for(int i = 0, int h = height; i < h; i++)
+    for(int i = 0, h = height; i < h; i++)
     {
-        for(int j = 0, int w = width; j < w; j++)
+        for(int j = 0, w = width; j < w; j++)
         {
             // deal with corners top LHS
             if(i == 0 && j == 0)
