@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
         return 1;
     }
     // open memory card
-    FILE* card = fopen(argv[1], "r");
+    FILE *card = fopen(argv[1], "r");
     if (card == NULL)
     {
         printf("Cannot open file %s\n", argv[1]);
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     // create buffer to read 512 bytes at a time
     unsigned char buffer[DFAT];
     // pointer to outfile
-    FILE* output = NULL;
+    FILE *output = NULL;
     // create image filenames;
     char image[8];
     // counter to keep track of images
@@ -53,8 +53,8 @@ int main(int argc, char *argv[])
 
     }
 
-     // close remaining files
-        fclose(output);
-        fclose(card);
-        return 0;
+    // close remaining files
+    fclose(output);
+    fclose(card);
+return 0;
 }
