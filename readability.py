@@ -4,7 +4,7 @@ from cs50 import get_string
 text = get_string("Text: ")
 
 total_letters = 0
-total_words = 1 #initialise to 1 as first character is also first word
+total_words = 1 # initialise to 1 as first character is also first word
 total_sent = 0
 
 for char in text:
@@ -15,7 +15,7 @@ for char in text:
     if(char.isspace()):
         total_words += 1
     # is it end of sentence
-    if(char == "." or char == "?" or char =="!"):
+    if(char == "." or char == "?" or char == "!"):
         total_sent += 1
 
 L = total_letters / total_words * 100
