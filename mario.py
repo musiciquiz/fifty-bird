@@ -1,5 +1,6 @@
 from cs50 import get_int
 
+
 def main():
     n = get_height()
     
@@ -14,8 +15,9 @@ def main():
         print("  ", end="")
         # RHS hasg
         for l in range(n-(n-i)+1):
-            print ("#", end="")
+            print("#", end="")
         print()    
+    
     
 def get_height():
     while True:
@@ -23,6 +25,7 @@ def get_height():
         if n > 0 and n < 9:
             break
     return n
+   
     
 main()    
     
