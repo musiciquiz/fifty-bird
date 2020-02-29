@@ -4,7 +4,7 @@ from cs50 import get_string
 text = get_string("Text: ")
 
 total_letters = 0
-total_words = 1 # initialise to 1 as first character is also first word
+total_words = 1  # initialise to 1 as first character is also first word
 total_sent = 0
 
 for char in text:
