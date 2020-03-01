@@ -35,7 +35,7 @@ for i in range(len(STR)):
             iter += STRlen
             if (counter > max):
                 max = counter
-        else: # no match - just go to next value and check there
+        else:  # no match - just go to next value and check there
             counter = 0
             iter += 1
     # populate the dict with consecutive max value
