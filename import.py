@@ -14,17 +14,17 @@ db = SQL("sqlite:///students.db")
 # create tables
 db.execute("CREATE TABLE students (first TEXT, middle TEXT, last TEXT, house TEXT, birth NUMERIC)")
 
-#open csv file
+# open csv file
 with open(argv[1], "r") as file:
 
-    #create DictReader
+    # create DictReader
     reader = csv.DictReader(file)
     for row in reader:
-        #parse name into first middle last
+        # parse name into first middle last
         row['name'] = row['name'].split()
         if len(row['name']) == 2:
             row['name'].insert(1, None)
 
-        #insert student
+        # insert student
         db.execute("INSERT INTO students (first, middle, last, house, birth) VALUES(?,?,?,?,?)", row['name'][0],
-        row['name'][1], row['name'][2], row['house'], int(row['birth']))
+                   row['name'][1], row['name'][2], row['house'], int(row['birth']))
