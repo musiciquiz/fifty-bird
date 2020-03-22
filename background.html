@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Javascript</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <p>
+            This is an example of using javascript to introduce functionality to a website.
+            Here you can click on a button to change the background color of the site.
+        </p>
+        <button id="red">R</button>
+        <button id="green">G</button>
+        <button id="blue">B</button>
+        <script>
+            let body = document.querySelector('body');
+            document.querySelector('#red').onclick = function(){
+                body.style.backgroundColor = 'red';
+            }
+             document.querySelector('#green').onclick = function(){
+                body.style.backgroundColor = 'green';
+            }
+             document.querySelector('#blue').onclick = function(){
+                body.style.backgroundColor = 'blue';
+            }
+        </script>
+        <a class="center" ="link" href="https://57cf9ed4-9739-412a-80c8-33d18124057e-ide.cs50.xyz:8080/index.html">HOMEPAGE</a>
+        <a class="center" ="link" href="https://57cf9ed4-9739-412a-80c8-33d18124057e-ide.cs50.xyz:8080/css.html">CSS</a>
+        <a class="center" ="link" href="https://57cf9ed4-9739-412a-80c8-33d18124057e-ide.cs50.xyz:8080/image.html">HTML</a>
+    </body>
+</html>
